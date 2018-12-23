@@ -1,5 +1,16 @@
 <div id="text"></div>
+
+<button onclick="increment()">Click Me!</button>
+
+<div id="count"></div>
  
 <script>
+var count = 0;
+
 document.getElementById("text").innerHTML = "Hello World!";
+
+function increment() {
+  count++;
+  document.getElementById("count").innerHTML = "Count: " + count;
+}
 </script>
